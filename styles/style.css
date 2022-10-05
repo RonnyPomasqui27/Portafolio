@@ -29,6 +29,9 @@ body{
   margin-bottom: 15px;
 }
 /*BARRA DE NAVEGACION*/
+.material-symbols-outlined{
+  display: none;
+}
 nav {
   display: flex;
   justify-content: center;
@@ -48,6 +51,49 @@ nav a {
 nav a:first-child{
   color: var(--color-ligthpuple);
 }
+
+@media (max-width: 320px) {
+  nav{
+    display: none;
+  }
+
+  .material-symbols-outlined{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+  }
+
+
+  .section-img img{
+    width: 250px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+  }
+
+  .section-img{
+    width: 40%;
+    height: 230px;
+    background-image: url(../Imágenes/Vector.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .section-info{
+    display: none;
+  }
+  .section-text{
+    display: none;
+  }
+  .section-imgs{
+    display: none;
+  }
+.section-submit{
+  display: none;
+}
+
+}
+
 /* PRESENTACION */
 .section-info{
   display: flex;
@@ -207,6 +253,15 @@ h3{
 -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75); */
 }
 
+@media (max-width: 320px) {
+
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
 /*EXPERIENCIA*/
 .article-cont-exp{
   width: 90%;
@@ -238,6 +293,7 @@ h3{
 -moz-box-shadow: 0px 4px 5px 0px var(--color-grey); */
 }
 
+
 .section-text{
   text-align: left;
   padding: 0;
@@ -259,7 +315,41 @@ h3{
   font-size: 1rem;
   padding: 50px 0px 0px 0px;
 }
+
+@media (max-width: 320px) {
+  .article-cont-exp{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .section-container{
+    width: 40%;
+  }
+}
 /*PORTAFOLIO*/
+@media (max-width: 320px) {
+  .porta-container{
+    width: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 120px;
+    }
+}
 
 .porta-container{
 width: 80%;
@@ -318,6 +408,32 @@ margin-bottom: 120px;
   padding: 20px;
   border-radius: 15px;
   background-color: var(--color-background);
+}
+
+@media (max-width: 320px) {
+.contact-main-container{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 50px;
+}
+
+.contact-phone h2 {
+  margin-left: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.contact-phone p {
+  margin-left: 30px;
+  font-size: 0.7rem;
+   color: var(--color-grey);
+}
 }
 
 /*PIE DE PAGINA*/
