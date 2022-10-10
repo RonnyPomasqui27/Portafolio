@@ -52,7 +52,7 @@ nav a:first-child{
   color: var(--color-ligthpuple);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   nav{
     display: none;
   }
@@ -253,7 +253,7 @@ h3{
 -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75); */
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
 
   .main{
     display: flex;
@@ -316,7 +316,7 @@ h3{
   padding: 50px 0px 0px 0px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .article-cont-exp{
     display: flex;
     flex-direction: column;
@@ -334,7 +334,7 @@ h3{
   }
 }
 /*PORTAFOLIO*/
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .porta-container{
     width: 40%;
     top: 0;
@@ -410,7 +410,7 @@ margin-bottom: 120px;
   background-color: var(--color-background);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
 .contact-main-container{
   width: 30%;
   display: flex;
